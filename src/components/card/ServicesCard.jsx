@@ -8,11 +8,13 @@ import Grid from '@mui/material/Grid';
 
 export default function ImgMediaCard() {
   return (
-    <Grid container xs={12}>
+    <Grid container>
       <CardMedia
         component="img"
         alt="green iguana"
-        height="200"
+        width={"100%"}
+        height={"100%"}
+        sx={{borderRadius:'20px 20px 0 0'}}
         image="https://template113523.motopreview.com/mt-demo/113500/113523/mt-content/uploads/2020/08/mt-2074-services-img3.jpg"
       />
       <CardContent>

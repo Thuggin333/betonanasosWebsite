@@ -1,29 +1,34 @@
-import { Typography,Grid } from '@mui/material'
 import React from 'react'
+
+// components
+import { Typography,Grid } from '@mui/material'
 import ServicesCard from "../components/card/ServicesCard";
 
 function Services() {
   return (
-    <Grid container rowSpacing={{xs:5}} sx={{display:"flex",justifyContent:'center'}} xs={12} p={4}>
-        <Grid item  xs={9}>
-            <Typography variant='h2'>Services</Typography>
+    <Grid container justifyContent="center" p={4}>
+      <Grid container item  xs={12} sm={12} md={10} lg={8}>
+        <Grid item p={2} xs={12}>
+            <Typography variant='h2' sx={{fontSize:{xs:"28px",md:'44px',fontFamily:'Oswald',fontWeight: "600"}}}>Services</Typography>
             <Typography variant="p">
             We supply cement to manufacturers of building materials and its official distributors, and do not work with resellers and packers.
             </Typography>
         </Grid>
-        <Grid container sx={{display:"flex",justifyContent:'space-evenly'}} columnSpacing={{ xs: 1, sm: 2, md: 4 }} item xs={12}>
-            <Grid sx={{border:"1px solid black"}} item xs={2}>
+        <Grid container item  justifyContent="space-between" gap={4} xs={12}>
+            <Grid item sx={{border:"1px solid",borderRadius:'15px'}}  xs={12} sm={3} >
             <ServicesCard/>
-            </Grid>
-            <Grid item xs={2}>
+            </Grid >
+            <Grid item sx={{border:"1px solid",borderRadius:'15px'}} xs={12} sm={3}>
             <ServicesCard />
             </Grid>
-            <Grid item xs={2}>
+            <Grid item sx={{border:"1px solid",borderRadius:'15px'}} xs={12} sm={3}>
             <ServicesCard />
             </Grid>
         </Grid>
     </Grid>
+    </Grid>
   )
-}
+} 
+
 
 export default Services

@@ -24,7 +24,7 @@ export const menuTitle = [
 
 const tabStyle = {
   appBar: {
-    backgroundColor: "rgb(80,34,195,0)",
+    backgroundColor: "rgba(0,0,0,0.8)",
   },
   menuItem: {
     color: "white",
