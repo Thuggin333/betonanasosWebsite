@@ -11,7 +11,6 @@ const Carousel = () => {
   return (
     <Swiper
       cssMode
-      navigation
       pagination
       mousewheel
       keyboard
@@ -27,7 +26,7 @@ const Carousel = () => {
       </SwiperSlide>
       <SwiperSlide>
         <img src={img2} alt="" />
-      </SwiperSlide>s
+      </SwiperSlide>
     </Swiper>
   );
 };

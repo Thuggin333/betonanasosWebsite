@@ -15,16 +15,16 @@ function Services() {
             </Typography>
         </Grid>
         <Grid container item  justifyContent="space-between" gap={4} xs={12}>
-            <Grid item sx={{border:"1px solid",borderRadius:'15px'}}  xs={12} sm={3} >
+            <Grid item sx={{border:"2px solid",borderRadius:'15px'}}  xs={12} sm={3} >
             <ServicesCard/>
             </Grid >
-            <Grid item sx={{border:"1px solid",borderRadius:'15px'}} xs={12} sm={3}>
+            <Grid item sx={{border:"2px solid",borderRadius:'15px'}} xs={12} sm={3}>
             <ServicesCard />
             </Grid>
-            <Grid item sx={{border:"1px solid",borderRadius:'15px'}} xs={12} sm={3}>
+            <Grid item sx={{border:"2px solid",borderRadius:'15px'}} xs={12} sm={3}>
             <ServicesCard />
             </Grid>
-        </Grid>
+        </Grid> 
     </Grid>
     </Grid>
   )
