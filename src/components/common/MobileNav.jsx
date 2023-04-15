@@ -8,7 +8,7 @@ import {
   ListItemText,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { menuTitle } from "../../pages/Header";
+import { menuTitle } from "../Header";
 
 function MobileNav() {
   const [openDrawer, setOpenDrawer] = useState(false);

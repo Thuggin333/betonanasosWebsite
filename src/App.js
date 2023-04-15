@@ -1,7 +1,6 @@
-import  Home from "./components/Home";
+import  Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
-import ContactUS from "./pages/ContactUS";
-import Header from "./pages/Header"
+import Header from "./components/Header"
 import Services from "./pages/Services";
 
 function App() {

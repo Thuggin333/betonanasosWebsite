@@ -2,23 +2,25 @@ import React, { useState } from "react";
 import { AppBar, Grid, Tab, Tabs, Toolbar, useMediaQuery } from "@mui/material";
 import MobileNav from "../components/common/MobileNav";
 import { useTheme } from "@mui/material/styles"
+import { useNavigate } from "react-router";
+import { HashLink as Link } from "react-router-hash-link";
 
 export const menuTitle = [
   {
     title: "SERVICES",
-    route: "/SERVICES",
+    route: "#services",
   },
   {
     title: "OUR ADVANTAGES",
-    route: "/OUR ADVANTAGES",
+    route: "#ourAdvantages",
   },
   {
     title: "ABOUT US",
-    route: "/ABOUT US",
+    route: "#aboutUs",
   },
   {
     title: "CONTACT",
-    route: "/CONTACT",
+    route: "#contact",
   },
 ];
 
@@ -36,10 +38,13 @@ export default function Header() {
   const [value, setValue] = useState(0);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  // const navigation = useNavigate()
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  // function handelMenuItemClick(e){
+  //   navigation(e.route)
+  // }
   return (
     <AppBar sx={{ ...tabStyle.appBar }}>
       <Toolbar sx={{justifyContent:{xs:'start',md:'center'}}}>
@@ -56,9 +61,11 @@ export default function Header() {
                   sx={{
                     ...tabStyle.menuItem,
                   }}
+                  // onClick={()=>handelMenuItemClick(e)}
                   label={e.title}
                   key={`title${i}`}
-                />
+                >
+                </Tab>
               ))}
             </Tabs>
           )}

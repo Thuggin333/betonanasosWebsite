@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import SliderHome from "./slider/SliderHome";
+import SliderHome from "../components/slider/SliderHome";
 
 const homeStyle = {
   width: "100%",
@@ -30,10 +30,10 @@ function Home() {
           borderRadius: "15px",
         }}>
         <Grid item p={4} alignItems={"center"} xs={12}>
-          <Typography variant="h4"color={"white"} >
+          <Typography variant="h4" sx={{fontSize:{xs:'20px',md:'28px'},color:'white'}} >
             БЕТОН ОТ ПРОИЗВОДИТЕЛЯ
           </Typography>
-          <Typography variant="p" color={"white"}>
+          <Typography variant="p"  sx={{fontSize:{xs:'16px',md:'26px'},color:'white'}}>
             Производство и доставка бетона в Москве
           </Typography>
         </Grid>
